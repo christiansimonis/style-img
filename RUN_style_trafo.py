@@ -34,8 +34,9 @@ import matplotlib.pyplot as plt
 
 # Function, using TF API
 runfile('apply_style_transfer.py') # call to define function "apply_style_transfer", used below. Wrapped code, based on tutorial from https://github.com/tensorflow/docs/blob/master/site/en/tutorials/generative/style_transfer.ipynb, Copyright 2018 The TensorFlow Authors.
+
 #-----------------------------------------------------------------------------------------------------------------------------------
-# Fundemental paremeter set
+# Fundamental paremeter set
 
 # Picture which is going to be used for content 
 content_name = "Rome.jpg"
@@ -48,8 +49,8 @@ style_weight=1e-2  # the higher the weight the more emphasis is on the style ima
 content_weight=1e4 # the higher the weight the more emphasis is on the content image
 #-----------------------------------------------------------------------------------------------------------------------------------
 
-# training specs 
-epochs = 5 # for good results, pls. change to epochs >= 10
+# Training specs 
+epochs = 5 # for good results, please change to epochs >= 10
 
 
 # Loop over style list
@@ -66,7 +67,7 @@ for idx, current_style in enumerate(style_name):
     image_list.append(image)
     
 
-# visualize results
+# Visualize results
 for idx in range(0,len(style_name)):
 
     plt.subplot(1, len(style_name), idx+1)
@@ -74,8 +75,4 @@ for idx in range(0,len(style_name)):
     plt.title('Style learned from: "' + style_name[idx] + '"', fontsize=12)
     
 plt.show
-
-
-
-
-
+#-----------------------------------------------------------------------------------------------------------------------------------
