@@ -42,7 +42,7 @@ runfile('apply_style_transfer.py') # call to define function "apply_style_transf
 content_name = "Rome.jpg"
 
 # List of styles which are learned and applied to content image via convolution layer
-style_name = ["gondola.jpg", "sketch.jpg"]
+style_name = ["venice.jpg", "sketch.jpg"]
 
 # Input weights
 style_weight=1e-2  # the higher the weight the more emphasis is on the style image
